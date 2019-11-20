@@ -1,0 +1,9 @@
+@media only screen and (min-width: 992px){
+    ._active a{
+        border-bottom: 3px solid #dc3545;
+        color: #dc3545!important;
+   }
+    .nav-link:hover{
+        border-bottom: 3px solid #dc3545;
+   }
+}
