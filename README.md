@@ -1,1 +1,1 @@
-# news
+Định ăn cắp gì à?
