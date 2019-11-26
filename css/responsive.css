@@ -264,7 +264,8 @@
   .snippet p,
   .box-5 .first .box-snippet,
   .copyright-right,
-  #social-container {
+  #social-container,
+  .backtotop.arlniainf {
     display: none !important;
   }
   .copyright-left {

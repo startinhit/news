@@ -240,7 +240,7 @@ li {
   width: 15px;
   height: 30px;
   right: -8px;
-  bottom: 0;
+  top: 0;
   background-color: #dc3545;
   transform: skew(20deg);
 }
@@ -1357,7 +1357,7 @@ li {
   width: 15px;
   height: 30px;
   right: -8px;
-  bottom: 0;
+  top: 0;
   background-color: #dc3545;
   transform: skew(20deg);
 }
