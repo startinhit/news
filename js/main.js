@@ -144,33 +144,12 @@ $(function() {
         }, 500), !1
     })
 });
+// tooltip bootstrap
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
 // console
 console.log('%cTrang web được thiết kế bởi Nguyễn Tỉnh\nMột cậu sinh viên có vẻ ngoài đẹp trai, hiền lành, tốt bụng và điều đặc biệt quan trọng và cậu ta chưa có...%cNGƯỜI YÊU!', 'font-family:"Roboto Slab", serif;font-size:30px;color:#000', 'font-family:"Roboto Slab", serif;font-size:30px;color:red');
-$(document).ready(function() {
-    $('#pagination').after('<div id="nav"></div>');
-    var rowsShown = 6;
-    var rowsTotal = $('#pagination #post').length;
-    var numPages = rowsTotal / rowsShown;
-    for (i = 0; i < numPages; i++) {
-        var pageNum = i + 1;
-        $('#nav').append('<a href="#" rel="' + i + '">' + pageNum + '</a>');
-    }
-    $('#pagination #post').hide();
-    $('#pagination #post').slice(0, rowsShown).show();
-    $('#nav a:first').addClass('active');
-    $('#nav a').bind('click', function() {
-
-        $('#nav a').removeClass('active');
-        $(this).addClass('active');
-        var currPage = $(this).attr('rel');
-        var startItem = currPage * rowsShown;
-        var endItem = startItem + rowsShown;
-        $('#pagination #post').css('opacity', '0.0').hide().slice(startItem, endItem).
-        css('display', 'table-row').animate({
-            opacity: 1
-        }, 300);
-    });
-});
 // preload
 window.addEventListener('load', function() {
     document.getElementById('af-preloader').style.display = 'none'
@@ -178,3 +157,86 @@ window.addEventListener('load', function() {
 $(window).on('load', function() {
     $('#af-preloader').delay(500).fadeOut('slow')
 });
+// time
+function formatAMPM(date) {
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var ampm = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12;
+    hours = hours ? hours : 12;
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    var strTime = hours + ':' + minutes + ' ' + ampm;
+    return strTime;
+}
+document.getElementById("time-now").innerHTML = formatAMPM(new Date);
+n = new Date();
+if (n.getTimezoneOffset() == 0) t = n.getTime() + (7 * 60 * 60 * 1000);
+else t = n.getTime();
+n.setTime(t);
+d = n.getDay();
+m = n.getMonth() + 1;
+y = n.getFullYear()
+var day_name = '';
+var mon_name = '';
+switch (d) {
+    case 0:
+    day_name = "Sunday";
+    break;
+    case 1:
+    day_name = "Monday";
+    break;
+    case 2:
+    day_name = "Tuesday";
+    break;
+    case 3:
+    day_name = "Wednesday";
+    break;
+    case 4:
+    day_name = "Thursday";
+    break;
+    case 5:
+    day_name = "Friday";
+    break;
+    case 6:
+    day_name = "Saturday";
+    break;
+}
+switch (m) {
+    case 1:
+    mon_name = "January";
+    break;
+    case 2:
+    mon_name = "February";
+    break;
+    case 3:
+    mon_name = "March";
+    break;
+    case 4:
+    mon_name = "April";
+    break;
+    case 5:
+    mon_name = "May";
+    break;
+    case 6:
+    mon_name = "June";
+    break;
+    case 7:
+    mon_name = "July";
+    break;
+    case 8:
+    mon_name = "August";
+    break;
+    case 9:
+    mon_name = "September";
+    break;
+    case 10:
+    mon_name = "October";
+    break;
+    case 11:
+    mon_name = "November";
+    break;
+    case 12:
+    mon_name = "December";
+    break;
+}
+document.getElementById("calendar").innerHTML = (day_name + ", " + mon_name + " " + (n.getDate() < 10 ? "0" : "") + n.getDate() + ", " + y);
