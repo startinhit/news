@@ -160,6 +160,9 @@
   }
 }
 @media only screen and (max-width: 768px) {
+  .category li {
+    margin-bottom: 10px;
+  }
   .sidebar-wrapper {
     display: none;
   }
@@ -182,7 +185,7 @@
     font-size: 20px;
   }
   .footer-cont {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
   .fast-news-title a h1,
   .footer-cont {
