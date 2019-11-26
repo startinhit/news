@@ -378,26 +378,27 @@
   .box-5 .first .box-title h2 {
     font-size: 17px;
   }
-  .post-header ._info .post-author .author-img img{
-      width: 42px;
-      height: 42px;
+  .post-header ._info .post-author .author-img img {
+    width: 42px;
+    height: 42px;
   }
   .post-header ._info .post-author .author-info .author-name {
     font-size: 14px;
     margin-bottom: 3px;
-}
-.post-header ._info .post-author .author-info .author-time{
+  }
+  .post-header ._info .post-author .author-info .author-time {
     font-size: 12px;
-}
+  }
   .post-header ._info .printBtn:before {
     width: 25px;
     height: 25px;
     line-height: 25px;
-}
-.post-comments .comments-title, .posts-relate .relate-title,
-.footer-title h1{
+  }
+  .post-comments .comments-title,
+  .posts-relate .relate-title,
+  .footer-title h1 {
     font-size: 16px;
-}
+  }
 }
 @media only screen and (max-width: 338px) {
   #social-container-long a {
@@ -428,24 +429,29 @@
   .page-nav {
     font-size: 11px;
   }
-  .page-nav a, .page-nav span{
-      margin-right: 7px;
+  .page-nav a,
+  .page-nav span {
+    margin-right: 7px;
   }
-  .page-nav a, .page-nav span{
-      padding: 4px 9px;
+  .page-nav a,
+  .page-nav span {
+    padding: 4px 9px;
   }
 }
 @media only screen and (max-width: 330px) {
-    .page-nav .pages{
-        padding: 6px 0;
-    }
-    .title-post h1, .box-5 li .box-title h2, .box-8 li .box-title h2 {
-        font-size: 13px;
-        margin-bottom: 3px;
-    }
+  .page-nav .pages {
+    padding: 6px 0;
+  }
+  .title-post h1,
+  .box-5 li .box-title h2,
+  .box-8 li .box-title h2 {
+    font-size: 13px;
+    margin-bottom: 3px;
+  }
 }
 @media only screen and (max-width: 320px) {
-    .page-nav a, .page-nav span {
-        margin-right: 5px;
-    }
+  .page-nav a,
+  .page-nav span {
+    margin-right: 5px;
+  }
 }
