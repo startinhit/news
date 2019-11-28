@@ -11,9 +11,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content='#dc3545' name='theme-color'>
+    <meta content='#dc3545' name='msapplication-navbutton-color'>
+    <meta content='#dc3545' name='apple-mobile-web-app-status-bar-style'>
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <title>News 24h - Tin Nhanh 24h</title>
-    <link rel="stylesheet" href="./css/nguyentinh.css">
+    <title>Contact | News 24h - Tin Nhanh 24h</title>
+    <link rel="stylesheet" href="css/nguyentinh.css">
 </head>
 <body>
     <div id='af-preloader'>
@@ -27,26 +30,50 @@
     <div id="header">
         <div class="meta">
             <div class="meta-header">
-                <h1><i class="fab fa-gg"></i> About Us News 24H <i class="fab fa-gg"></i></h1>
-                <span class="meta-link"><i class="fas fa-quote-left"></i> https://news24h.vn/about-us.html <i class="fas fa-quote-right"></i></span>
+                <h1><i class="fab fa-gg"></i> Contact <i class="fab fa-gg"></i></h1>
+                <span class="meta-link"><i class="fas fa-quote-left"></i> https://news24h.vn/contact.html <i class="fas fa-quote-right"></i></span>
             </div>
         </div>
     </div>
     <div id="main-cont">
-        
+        <div class="page-cont">
+            <h4>Bạn có thể liên hệ với admin qua các phương thức sau:</h4>
+            <b>Facebook:</b> <a href="https://admin.nguyentinhblog.com/" target="_blank">Nguyễn Tỉnh</a><br />
+            <b>Zalo:</b> 0963533227<br /><b>Phone:</b> 08888.27074<br />
+            <b>Mail: </b>admin@nguyentinhblog.com
+            <h2 class="title">Điền thông tin và form sau</h2>
+            <form>
+                <div class="row">
+                    <div class="form-group col-sm-6">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+                </div>
+                <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
+                <div id="msgSubmit" class="h4 text-center hidden">Message Submitted!</div>
+            </form>
+        </div>
     </div>
     <div class='backtotop'>
         <i class='fa fa-angle-up'></i>
     </div>
     <div id='arcontactus'></div>
     <!-- jQuery library -->
-    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
     <!-- Latest compiled JavaScript -->
-    <script src="./js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <!-- js contact phone -->
-    <script src="./js/arcontactus.min.js"></script>
-    <script src="./js/contact.min.js"></script>
+    <script src="js/arcontactus.min.js"></script>
+    <script src="js/contact.min.js"></script>
     <!--Js website-->
-    <script src="./js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

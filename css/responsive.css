@@ -12,8 +12,8 @@
     bottom: -0.5rem;
     left: 50%;
     transform: translate(-50%, 0);
-    transition: 0.4s;
-    -webkit-transition: 0.4s;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
   }
   .brick {
     position: relative;
@@ -32,8 +32,8 @@
     bottom: -0.5rem;
     left: 50%;
     transform: translate(-50%, 0);
-    transition: 0.4s;
-    -webkit-transition: 0.4s;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
   }
   .brick:hover:after {
     width: 90%;
@@ -278,7 +278,7 @@
     font-weight: 400;
   }
   .post-header .post-title h1 {
-    font-size: 18px;
+    font-size: 20px;
   }
   #social-container-long {
     display: flex;
@@ -292,7 +292,8 @@
     font-size: 13px;
   }
   #box-title h2:after,
-  #box-title .active:after {
+  #box-title .active:after,
+  #box-title .active:before {
     height: 27px;
   }
   .meta-post,
@@ -302,7 +303,7 @@
 }
 @media only screen and (max-width: 414px) {
   .posts-relate .related-cover .posts .posts-title a {
-    font-size: 13px;
+    font-size: 14px;
   }
   .fast-news-title a h1,
   .footer-cont {
