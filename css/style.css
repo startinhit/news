@@ -1497,6 +1497,7 @@ li {
 }
 .form-inline .form-control {
   height: auto;
+  margin-right: .5rem;
 }
 .navbar .logo {
   width: 121px;
